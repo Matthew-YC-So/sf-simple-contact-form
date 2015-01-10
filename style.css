@@ -1,0 +1,61 @@
+form.contact-form input {
+    width: auto;
+}
+
+form.contact-form input[type=text], form.contact-form input[type=email], form.contact-form input[type=url], form.contact-form textarea {
+	width:20em;
+}
+
+form.contact-form textarea {
+     height: 6em;
+     width: 30em;
+}
+
+form.contact-form input[type=radio]{
+	margin-left:2em;
+}
+
+form.contact-form label {
+    display: inline-block;
+    width: 8em;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+
+form.contact-form select {
+   font-size: 0.8em;
+}
+
+form.contact-form .wider{
+    width: 25em;
+}
+
+form.contact-form input + label   {
+    width: auto;
+}
+
+form.contact-form .input-group{
+	margin: 0.5em 0 0 0;
+}
+
+form.contact-form select {
+    width: 5.5em;
+} 
+
+form.contact-form select.wider {
+    width: 6em;
+}
+
+
+form.contact-form .information {
+    color: #2a70a2;
+}
+
+form.contact-form .error {
+    color: #990000;
+}
+
+form.contact-form .command{
+    margin-top: 1em;
+}

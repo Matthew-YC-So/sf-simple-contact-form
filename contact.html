@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <link type="text/css" rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+     <form id="contact" action="$action" method="post" class="contact-form" >
+         <div class="information"><span>$label_mandatory</span><br /><span>$information</span></div>
+		 <div class="input-group">
+		     <label class="caption" for="cf-name">$label_name<span class='md-mark'>(*)</span></label>
+		     <input type="text" id="cf-name" name="cf-name" required value="$name" title="$required" placeholder="$hint_name" />
+		 </div>
+		 <div class="input-group">
+			<label class='caption'  for='cf-sex-female'>$label_sex <span class='md-mark'>(*)</span></label>
+			<input id='cf-sex-female' name='cf-sex' type='radio' value='female' $sex_female required /><label for='cf-sex-female'>$label_sex_female</label>&nbsp;<input  id='cf-sex-male' name='cf-sex' type='radio' value='male' $sex_male required/><label for='cf-sex-male'>$label_sex_male</label>
+		 </div>
+		 <div class="input-group">
+		     <label class="caption" for="cf-email">$label_email<span class='md-mark'>(*)</span></label>
+		     <input type="email" id="cf-email" name="cf-email" required value="$email" title="$required" placeholder="$hint_email" />
+		 </div>
+		 <div class="input-group">
+		     <label class="caption" for="cf-tel">$label_tel</label>
+		     <input type="text" id="cf-tel" name="cf-tel"  value="$tel" placeholder="$hint_tel"  />
+		 </div>	
+		 <div class="input-group">
+		     <label class="caption" for="cf-subject">$label_subject<span class='md-mark'>(*)</span></label>
+		     <input type="text" id="cf-subject" name="cf-subject" required value="$subject" title="$required" placeholder="$hint_subject"  />
+		 </div>
+		 <div class="input-group">
+		     <label class="caption" for="cf-message">$label_message<span class='md-mark'>(*)</span></label>
+		     <textarea id="cf-message" name="cf-message" required title="$required" placeholder="$hint_message">$message</textarea>
+		 </div>
+		 <div class='command'>
+			<input type='submit' name='cf-submitted' value='$submit' />
+         </div>
+     </form>        
+    </body>
+</html>
